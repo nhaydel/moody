@@ -12,7 +12,8 @@
   [& args]
   (def bag (prep/train default_training_file default_sentiment_map 1))
   (println (analyze/nb_classifier bag "this is good" default_sentiment_map))
-
+  (def captain_marvel_id (client/get-movie-id "Captain Marvel"))
+  (println captain_marvel_id)
   )
 
 
